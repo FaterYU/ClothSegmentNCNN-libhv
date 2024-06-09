@@ -2,7 +2,7 @@
 
 ## Input
 
-- <hostname>:<port>/segment
+- `<hostname>:<port>/segment`
 - `POST`
 - (Default) `8081` port
 - `form-data`
@@ -12,6 +12,17 @@
 
 - `form-data`
 - boundary: `----WebKitFormBoundary7MA4YWxkTrZu0gW`
+- result: (json)
+  - count
+  - latency (ms)
+  - objects (list)
+    - label
+    - prob
+    - rect (json)
+      - x
+      - y
+      - width
+      - height
 
 **Example**
 
